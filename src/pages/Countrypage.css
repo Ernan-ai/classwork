@@ -1,0 +1,215 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-out;
+  }
+  
+  h1:hover {
+    transform: scale(1.05);
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin: 5px 0;
+  }
+  
+  /* Основной контейнер */
+  .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Секция с информацией о стране */
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .info img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .info img:hover {
+    transform: scale(1.05);
+  }
+  
+  .info p {
+    max-width: 500px;
+    font-size: 1.2rem;
+    color: #34495e;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .info .borders {
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  .loading {
+    font-size: 1.5rem;
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+  }
+  
+  /* Кнопки и навигация */
+  button, .button {
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover, .button:hover {
+    background-color: #2980b9;
+    transform: translateY(-4px);
+  }
+  
+  button:active, .button:active {
+    transform: translateY(0);
+  }
+  
+  /* Адаптивность для мобильных устройств */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    .info {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .info img {
+      max-width: 80%;
+    }
+  
+    .info p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .info p {
+      font-size: 1rem;
+    }
+  }
+
+  /* Стили для стрелки и кнопки "Домой" */
+.back-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .back-button {
+    background-color: transparent;
+    border: none;
+    color: #2980b9;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    color: #3498db;
+  }
+  
+  .back-button span {
+    font-size: 1.2rem;
+  }
+  
+  .back-button svg {
+    transition: transform 0.2s ease;
+  }
+  
+  .back-button:hover svg {
+    transform: translateX(-5px);
+  }
+  
+  /* Стили для контента */
+  .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #470000;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2980b9;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Остальные стили как были в предыдущем ответе */
+  
